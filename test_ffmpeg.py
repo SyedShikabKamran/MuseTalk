@@ -11,6 +11,7 @@ def test_ffmpeg(ffmpeg_path):
     # Add ffmpeg path to environment variable
     os.environ["PATH"] = f"{ffmpeg_path}{path_separator}{os.environ['PATH']}"
     
+    
     try:
         # Try to run ffmpeg
         result = subprocess.run(["ffmpeg", "-version"], capture_output=True, text=True)

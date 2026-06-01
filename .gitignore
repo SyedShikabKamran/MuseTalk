@@ -1,18 +1,107 @@
-.DS_Store
-*.log
-.idea/
-.vscode/
-*.pyc
-.ipynb_checkpoints
-results/
-models/
+# =========================
+# Python environments
+# =========================
+musetalk_env/
+venv/
+env/
+.env
+
+# =========================
+# Model weights (ignore actual weights, keep folder structure)
+# =========================
+models/musetalk/*.bin
+models/musetalk/*.safetensors
+
+models/musetalkV15/*.pth
+models/musetalkV15/*.safetensors
+
+models/whisper/*.bin
+models/whisper/*.safetensors
+
+models/dwpose/*.pth
+models/dwpose/*.safetensors
+
+models/syncnet/*.pt
+models/syncnet/*.safetensors
+
+models/sd-vae/*.bin
+models/sd-vae/*.safetensors
+
+models/face-parse-bisent/*.pth
+models/face-parse-bisent/*.safetensors
+
+# optional extra model types
+models/**/*.ckpt
+models/**/*.pt
+models/**/*.pth
+models/**/*.bin
+models/**/*.safetensors
+
+# keep placeholder file if needed
+!models/.gitkeep
+
+# =========================
+# Python caches and build files
+# =========================
 **/__pycache__/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
 *.py[cod]
 *$py.class
+*.egg-info/
+dist/
+build/
+
+# =========================
+# IDE / editor files
+# =========================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# =========================
+# OS / system files
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# Project-specific temp / cache
+# =========================
+.ipynb_checkpoints
 dataset/
 ffmpeg*
 ffmprobe*
 ffplay*
-debug
-exp_out
+debug/
+exp_out/
 .gradio
+tmp/
+*.log
+*.tmp
+
+# =========================
+# Results folder
+# Keep folder, ignore generated contents
+# =========================
+results/*
+!results/.gitkeep
+
+# =========================
+# Generated avatar frames
+# Keep folder, ignore generated contents
+# =========================
+data/avatar_frames/*
+!data/avatar_frames/.gitkeep
+
+# =========================
+# IMPORTANT:
+# Keep sample/demo data
+# DO NOT ignore:
+# - data/audio/
+# - data/video/
+# =========================

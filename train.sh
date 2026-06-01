@@ -21,6 +21,7 @@ if [ "$STAGE" != "stage1" ] && [ "$STAGE" != "stage2" ]; then
     exit 1
 fi
 
+
 # Launch distributed training using accelerate
 # --config_file: Path to the GPU configuration file
 # --main_process_port: Port number for the main process, used for distributed training communication

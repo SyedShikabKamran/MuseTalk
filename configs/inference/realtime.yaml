@@ -1,10 +1,11 @@
 avator_1:
  preparation: True # your can set it to False if you want to use the existing avator, it will save time
- bbox_shift: 5
- video_path: "data/video/yongen.mp4"
+ bbox_shift: 0
+ video_path: "data/video/man1.mp4"
  audio_clips:
-     audio_0: "data/audio/yongen.wav"
-     audio_1: "data/audio/eng.wav"
- 
-  
-
+     interview: "data/audio/interview.mp3"
+     #vidiq: "data/audio/vidiq.mp3"
+     #assistant: "data/audio/assistant.wav"
+     #job_interview: "data/audio/job_interview.wav"
+     #news: "data/audio/news.wav"
+     #intro: "data/audio/intro.wav"

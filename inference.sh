@@ -70,3 +70,4 @@ fi
 
 # Run inference
 python3 -m $script_name $cmd_args
+

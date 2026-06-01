@@ -39,3 +39,4 @@ hf download ManyOtherFunctions/face-parse-bisent --local-dir %CheckpointsDir%\fa
 
 echo All weights have been downloaded successfully!
 endlocal 
+

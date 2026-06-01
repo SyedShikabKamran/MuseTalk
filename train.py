@@ -356,6 +356,7 @@ def main(cfg):
                 discriminator_maps_generated = loss_dict['discriminator'](pyramide_generated)
                 discriminator_maps_real = loss_dict['discriminator'](pyramide_real)
 
+
                 for scale in loss_dict['disc_scales']:
                     key = 'prediction_map_%s' % scale
                     value = ((1 - discriminator_maps_generated[key]) ** 2).mean()
